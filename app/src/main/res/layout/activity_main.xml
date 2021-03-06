@@ -10,28 +10,22 @@
         android:layout_height="wrap_content"
         app:layout_constraintHorizontal_weight="4"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@+id/add"
+        app:layout_constraintRight_toLeftOf="@+id/btnAdd"
         app:layout_constraintTop_toTopOf="parent" />
+
     <Button
-        android:id="@+id/add"
-        android:layout_width="0dp"
+        android:id="@+id/btnAdd"
+        android:layout_width="50dp"
         android:layout_height="wrap_content"
-        app:layout_constraintHorizontal_weight="1"
-        android:text="+"
         android:onClick="add"
-        app:layout_constraintRight_toLeftOf="@+id/remove"
-        app:layout_constraintLeft_toRightOf="@+id/taskName"
-        app:layout_constraintTop_toTopOf="parent"/>
-    <Button
-        android:id="@+id/remove"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:text="+"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintHorizontal_weight="1"
-        android:text="-"
-        android:onClick="remove"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/add"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintLeft_toRightOf="@+id/taskName"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ListView
         android:id="@+id/tasksList"
         android:layout_width="0dp"
